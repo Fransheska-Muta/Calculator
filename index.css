@@ -9,11 +9,13 @@ body{
 }
 
 #display{
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    border-radius: 10px;
     padding: 25px;
-    font-size: 5rem;
-    text-align: left;
-    border:none;
+    font-size: 4rem;
     color: white;
     background-color: hsl(0, 0%, 20%);
 }
@@ -27,29 +29,11 @@ body{
 
 .skin{
     background-color: rgb(7, 7, 7);
-    box-shadow: -5px 5px 5px  rgb(48, 5, 88) inset;
+    box-shadow: -10px 5px 5px  rgb(48, 5, 88) inset;
     border-radius: 20px;
     height: 90vh;
     width: 50vw;
     margin: auto;
-}
-
-.screen{
-    /* border: 2px solid white; */
-    background-color: rgb(24, 24, 22);
-    height: 20%;
-    width: 80%;
-    margin: auto;
-    margin-top: 6%;
-    margin-bottom: 10%;
-    border-radius: 10px;
-}
-
-.pressing{
-    /* border: 2px solid red; */
-    height: 68%;
-    margin: auto;
-    border-radius: 20px;
 }
 
 #keys{
@@ -61,12 +45,12 @@ body{
 
 button{
     width: 100%;
-    /* height: 100px; */
+    height: 110%;
+    padding: 8%;
     border-radius: 50px;
-    border: none;
     background-color: hsl(0, 0%, 30%);
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -79,7 +63,7 @@ button:hover{
 }
 
 .operator:hover{
-     background-color: hsl(32, 100%, 70%);
+    background-color: hsl(32, 100%, 70%);
 }
 
 svg{
@@ -93,16 +77,25 @@ svg{
 
 @media screen and (min-width: 1000px){
     .skin{
-    width: 30vw;
+    width: 33vw;
 }
 }
 
 
 @media screen and (max-width: 600px){
     .skin{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 90vh;
-    width: 80vw;
+    width: 84vw;
+}
+
+}
+
+@media screen and (max-width: 450px){
+    .skin{
+    /* border: 2px solid white; */
+    height: 90vh;
+    width: 84vw;
 }
 
 }
