@@ -8,6 +8,16 @@ body{
     background-color: blueviolet;
 }
 
+#display{
+    width: 100%;
+    padding: 25px;
+    font-size: 5rem;
+    text-align: left;
+    border:none;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+}
+
 .container{
     /* border: 2px solid blue; */
     height: 100vh;
@@ -20,7 +30,7 @@ body{
     box-shadow: -5px 5px 5px  rgb(48, 5, 88) inset;
     border-radius: 20px;
     height: 90vh;
-    width: 35vw;
+    width: 50vw;
     margin: auto;
 }
 
@@ -42,23 +52,34 @@ body{
     border-radius: 20px;
 }
 
-.rows{
-    /* border: 2px solid white; */
-    height: 20%;
-    width: 94%;
-    margin: auto;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px
 }
 
 button{
-    background-color: rgb(80, 74, 74);
-    border-radius: 50%;
-    width: 24%;
-    height: 90%;
-    color: white
+    width: 100%;
+    /* height: 100px; */
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+
+.operator{
+    background-color: hsl(32, 100%, 50%);
+}
+
+.operator:hover{
+     background-color: hsl(32, 100%, 70%);
 }
 
 svg{
@@ -82,17 +103,6 @@ svg{
     border: 2px solid white;
     height: 90vh;
     width: 80vw;
-}
-
-   .pressing{
-    border: 2px solid blue;
-    height: 67%;
-}
-
-button{
-    border-radius: 70%;
-    width: 25%;
-    height: 100%
 }
 
 }
