@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: blueviolet;
+    background-color: rgb(47, 7, 85);
 }
 
 .container{
@@ -17,7 +17,7 @@ body{
 
 .skin{
     background-color: rgb(7, 7, 7);
-    box-shadow: -10px 5px 5px  rgb(48, 5, 88) inset;
+    box-shadow: -10px 5px 5px  rgb(93, 10, 170) inset;
     border-radius: 20px;
     height: 90vh;
     width: 50vw;
@@ -41,7 +41,7 @@ body{
     /* border: 2px solid red; */
     height: 65%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     gap: 2px;
     padding: 10px;
 }
@@ -58,15 +58,19 @@ button{
 }
 
 button:hover{
-    background-color: hsl(0, 0%, 40%);
+    background-color: hsl(0, 0%, 50%);
 }
 
 .operator{
-    background-color: hsl(32, 100%, 50%);
+    background-color: hsl(283, 67%, 40%);
+}
+
+.equal{
+    width: 500%
 }
 
 .operator:hover{
-    background-color: hsl(32, 100%, 70%);
+    background-color: hsl(290, 38%, 60%);
 }
 
 svg{
