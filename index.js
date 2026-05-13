@@ -26,7 +26,14 @@ function getNumber(num) {
       display.value = secondNumber
     }
 }
+
 function getOperator(op) {
+// Once we have calculated the 2 numbers, the result becomes firstNumber so we are able to use another operation
+  if (step === 2 && secondNumArray.length > 0) { // if we have put the operator and the second number is > 0
+    calculateEquals()
+    firstNumber = result
+    secondNumArray = []
+  }
    step = 2
    operation = op
    display.value = operation
@@ -56,11 +63,19 @@ const calculateEquals = () => {
     }else if(operation === '/'){
         result = firstNumber / secondNumber
         display.value = result
+    }if (secondNumber === 0){
+        display.value = 'Error'
     }else if (operation === '%'){
         result = firstNumber % secondNumber
         display.value = result
     }else if (operation === '√'){
         result = Math.sqrt(firstNumber)
+        display.value = result
+    }else if (operation == '**2'){
+        result = firstNumber **2
+        display.value = result
+    }else if (operation == '**'){
+        result = firstNumber ** secondNumber
         display.value = result
     }
 }
